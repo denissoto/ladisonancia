@@ -1,34 +1,43 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: Home
+        name: 'Inicio',
+        component: () => import("@/views/Inicio.vue"),
     },
     {
-        path: '/category',
-        name: 'Category',
-        component: () => import("@/views/Category.vue"),
+        path: '/politica',
+        name: 'Politica',
+        component: () => import("@/views/Politica.vue"),
     },
     {
-        path: '/detail',
-        name: 'Detail',
-        component: () => import("@/views/Detail.vue"),
+        path: '/iniciarsesion',
+        name: 'IniciarSesion',
+        component: () => import("@/views/IniciarSesion.vue"),
     },
     {
-        path: '/authors',
-        name: 'Authors',
-        component: () => import("@/views/Authors.vue"),
+        path: '/economia',
+        name: 'Economia',
+        component: () => import("@/views/Economia.vue"),
     },
     {
-        path: '/login',
-        name: 'Login',
-        component: () => import("@/views/Login.vue"),
+        path: '/sociedad',
+        name: 'Sociedad',
+        component: () => import("@/views/Sociedad.vue"),
+    },
+    {
+        path: '/deportes',
+        name: 'Deportes',
+        component: () => import("@/views/Deportes.vue"),
+    },
+    {
+        path: '/tendencias',
+        name: 'Tendencias',
+        component: () => import("@/views/Tendencias.vue"),
     }
 ]
 

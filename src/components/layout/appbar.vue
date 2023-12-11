@@ -60,8 +60,8 @@
                 @click="$router.push('/')"
             >
               <v-icon color="primary" large>mdi-feather</v-icon>
-              Hero
-              <span class="accent--text">UI</span>
+              La
+              <span class="accent--text">Disonancia</span>
             </v-toolbar-title>
           </v-col>
 
@@ -106,8 +106,8 @@ export default {
     drawer: null,
     btnItems: [
       {
-        text: "Free Download",
-        href: "https://github.com/AGDholo/giraffe",
+        text: "Iniciar sesión",
+        href: "/iniciarsesion",
         target: "_black",
         color: "primary",
         icon: "mdi-download",
@@ -115,24 +115,24 @@ export default {
     ],
     barItems: [
       {
-        title: "Home",
-        to: "/",
+        title: "Política",
+        to: "/politica",
       },
       {
-        title: "Category",
-        to: "/category",
+        title: "Economía",
+        to: "/economia",
       },
       {
-        title: "Detail",
-        to: "/detail",
+        title: "Sociedad",
+        to: "/sociedad",
       },
       {
-        title: "Authors",
-        to: "/authors",
+        title: "Deportes",
+        to: "/deportes",
       },
       {
-        title: "Login",
-        to: "/login",
+        title: "Tendencias",
+        to: "/tendencias",
       },
     ],
   }),
